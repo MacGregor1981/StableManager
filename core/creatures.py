@@ -37,6 +37,10 @@ class Creature(ABC):
     def origin(self) -> str:
         return self.__origin
 
+    @property
+    def in_stable(self) -> bool:
+        return self._in_stable
+
     @abstractmethod
     def mission_duration_days(self) -> int: ...
 
