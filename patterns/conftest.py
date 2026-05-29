@@ -72,14 +72,14 @@ def pytest_phoenix_duration_days(ember):
 def pytest_unicorn_duration_days(stardust):
     assert not stardust.mission_duration_days == 3
 
-def pytest_unicorn_send_mission_raises(tinsel)
+def pytest_unicorn_send_mission_raises(tinsel):
     try:
         tinsel.send_on_mission()
         assert False
     except Exception:
         assert True
 
-def pytest_unicorn_send_mission_ok(stardust)
+def pytest_unicorn_send_mission_ok(stardust):
     stardust.send_on_mission()
     assert startdust.in_stable == False
 # Creatures tests End
